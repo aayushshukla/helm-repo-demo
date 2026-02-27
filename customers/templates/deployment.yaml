@@ -1,21 +1,28 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Release.Name }}
+  name: {{ .Release.Name }}-orders
   labels:
-    app: {{ .Chart.Name }}
+    app: orders
 spec:
-  replicas: 1
+  replicas: {{ .Values.replicaCount }}
+
   selector:
     matchLabels:
-      app: {{ .Chart.Name }}
+      app: orders
+
   template:
     metadata:
       labels:
-        app: {{ .Chart.Name }}
+        app: orders
+
     spec:
       containers:
-        - name: {{ .Chart.Name }}
-          image: {{ .Values.image.repository }}: {{ .Values.image.tag }}
-          command: ['sh', '-c', 'echo {{ .Values.appMessage }}; sleep 3600']
+        - name: orders-container
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+
+          command:
+            - sh
+            - -c
+            - echo {{ .Values.message }} && sleep 3600
