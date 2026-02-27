@@ -3,43 +3,23 @@ entries:
   customers:
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2026-02-27T13:28:43.2174715+05:30"
+    created: "2026-02-27T14:11:50.124188+05:30"
     description: A Helm chart for Kubernetes
-    digest: 13ba1fdfd96e61399f21bf6bf3424618b0a2991a3bde1d1f2f3f0ffa51401755
+    digest: b920091c8b2b53efb39410db4fb084d1b380b7788df3a329844a02b0d19f8a9d
     name: customers
     type: application
     urls:
     - customers-0.1.0.tgz
     version: 0.1.0
-  - apiVersion: v2
-    appVersion: 1.1.0
-    created: "2026-02-27T13:28:43.2384735+05:30"
-    description: A Helm chart for Kubernetes
-    digest: b5f92b26b2cf155d0d55d65ba49ea16455cb901a1b448d5207447ac9e61d441e
-    name: customers
-    type: application
-    urls:
-    - helm-repo-demo/customers-0.1.0.tgz
-    version: 0.1.0
   orders:
   - apiVersion: v2
-    appVersion: 1.0.0
-    created: "2026-02-27T13:28:43.2192492+05:30"
-    description: A Helm chart for Kubernetes
-    digest: 10959d3d9792534adb419d0f88417fa87742ec5d9c8b71468fa5eadbe8f9f211
+    appVersion: "1.0"
+    created: "2026-02-27T14:11:50.1247376+05:30"
+    description: Simple Hello Order Helm Chart
+    digest: 2e1a1eff1c35e5a055d918a4aaca00ae8d90ba2816f1a598222e706b452a8794
     name: orders
     type: application
     urls:
     - orders-0.1.0.tgz
     version: 0.1.0
-  - apiVersion: v2
-    appVersion: 1.0.0
-    created: "2026-02-27T13:28:43.2564852+05:30"
-    description: A Helm chart for Kubernetes
-    digest: 0fcaba0738dc3ec74149a8f2166013953dbab1087106070f5fa67d5a939209fd
-    name: orders
-    type: application
-    urls:
-    - helm-repo-demo/orders-0.1.0.tgz
-    version: 0.1.0
-generated: "2026-02-27T13:28:43.2163186+05:30"
+generated: "2026-02-27T14:11:50.1236195+05:30"
